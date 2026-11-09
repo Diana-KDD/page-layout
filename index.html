@@ -7,19 +7,185 @@
     <title>Artist Page</title>
   </head>
   <body>
+    <svg display="none">
+      <symbol id="logo" viewBox="0 0 244 32">
+        <path
+          fill="#a259ff"
+          fill-rule="evenodd"
+          d="M6 12.45a1 1 0 0 1 1 1V26h18V13.45a1 1 0 1 1 2 0V26a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V13.45a1 1 0 0 1 1-1M3 5a1 1 0 0 1 1-1h24a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#a259ff"
+          fill-rule="evenodd"
+          d="M4 7a1 1 0 0 1 1 1v2a3 3 0 0 0 6 0V8a1 1 0 1 1 2 0v2a5 5 0 1 1-10 0V8a1 1 0 0 1 1-1"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#a259ff"
+          fill-rule="evenodd"
+          d="M12 7a1 1 0 0 1 1 1v2a3 3 0 0 0 6 0V8a1 1 0 1 1 2 0v2a5 5 0 1 1-10 0V8a1 1 0 0 1 1-1"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#a259ff"
+          fill-rule="evenodd"
+          d="M20 7a1 1 0 0 1 1 1v2a3 3 0 0 0 6 0V8a1 1 0 1 1 2 0v2a5 5 0 1 1-10 0V8a1 1 0 0 1 1-1"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#fff"
+          d="M51.48 22.548h.396V8.6h2.904V24h-5.676L47.3 10.052h-.396V24H44V8.6h5.676zM58.065 8.6h9.856v2.772h-6.952v3.52h6.82v2.772h-6.82V24h-2.904zm12.722 0h11.088v2.772h-4.092V24H74.88V11.372h-4.092zm26.238 0h5.104l.88 11.572v2.244h.528v-2.244l.88-11.572h5.104V24h-2.64V13.704l.264-3.52h-.528L105.473 24h-4.356l-1.188-13.816H99.4l.264 3.52V24h-2.64zm21.765 13.816q-.44 1.033-1.232 1.474-.792.417-1.848.418a4.7 4.7 0 0 1-1.87-.374 4.4 4.4 0 0 1-1.518-1.1 5.5 5.5 0 0 1-1.056-1.76q-.374-1.035-.374-2.354v-.352q0-1.299.374-2.332.373-1.034 1.012-1.76.637-.726 1.474-1.1a4.3 4.3 0 0 1 1.826-.396q1.165 0 1.87.396.726.396 1.144 1.232h.396v-1.32h2.772V20.7q0 .66.594.66h.418V24h-1.892q-.749 0-1.232-.44-.462-.44-.462-1.144zm-2.464-.748q1.21 0 1.936-.792.726-.814.726-2.2v-.264q0-1.386-.726-2.178-.726-.814-1.936-.814-1.21-.001-1.936.814-.726.792-.726 2.178v.264q0 1.386.726 2.2.726.792 1.936.792m8.344-8.58h4.62v1.584h.396q.309-.903 1.034-1.386.749-.507 1.782-.506 1.629 0 2.618 1.034.99 1.011.99 3.102v.484l-2.86.264v-.308q0-.902-.462-1.43-.462-.55-1.386-.55t-1.452.638-.528 1.826v3.52h2.508V24h-7.524v-2.64h2.244v-5.632h-1.98zm17.651 4.004h.528l2.904-4.004h3.036v.132l-3.52 4.994v.396l3.872 5.258V24h-3.168l-3.124-4.268h-.528V24h-2.772V8.6h2.772zm12.261 2.354q.022.483.22.902.22.395.572.704.374.285.836.462.483.154 1.012.154 1.034 0 1.584-.352.549-.375.792-.88l2.376 1.32a5 5 0 0 1-.55.88 3.9 3.9 0 0 1-.924.814q-.55.373-1.364.616-.792.241-1.87.242-1.233 0-2.244-.396a5.1 5.1 0 0 1-1.76-1.144 5.4 5.4 0 0 1-1.144-1.826q-.396-1.08-.396-2.442v-.132q0-1.255.418-2.288a5.3 5.3 0 0 1 1.188-1.76 5.3 5.3 0 0 1 1.738-1.122 5.6 5.6 0 0 1 2.156-.418q1.407 0 2.42.506 1.012.483 1.672 1.254a4.8 4.8 0 0 1 .968 1.672q.308.901.308 1.76v1.474zm2.618-4.158q-1.056 0-1.716.55-.66.527-.858 1.232h5.148q-.132-.771-.836-1.276-.682-.506-1.738-.506m8.102-2.2h3.234V8.6h2.772v4.488h3.938v2.64h-3.938V20.7q0 .66.594.66h2.948V24h-4.62q-.747 0-1.232-.484-.462-.485-.462-1.232v-6.556h-3.234zM181.281 28.4h-2.772V13.088h2.772v1.584h.396a3.16 3.16 0 0 1 1.276-1.386q.836-.507 2.134-.506.968 0 1.826.374.88.374 1.518 1.1.66.703 1.034 1.738.396 1.034.396 2.354v.396q0 1.341-.374 2.376a5.4 5.4 0 0 1-1.012 1.76q-.638.703-1.518 1.078a4.9 4.9 0 0 1-1.87.352q-.748 0-1.298-.154a3.6 3.6 0 0 1-.968-.418 3.4 3.4 0 0 1-.682-.594 5.5 5.5 0 0 1-.462-.726h-.396zm2.904-6.732q1.298 0 2.09-.792.814-.814.814-2.2v-.264q0-1.386-.814-2.178-.792-.814-2.09-.814t-2.112.836q-.792.813-.792 2.156v.264q0 1.341.792 2.178.815.814 2.112.814m8.301-.308h3.828V11.24h-3.696V8.6h6.468v12.76h3.564V24h-10.164zm20.598 1.056q-.44 1.033-1.232 1.474-.792.417-1.848.418-.99 0-1.87-.374a4.4 4.4 0 0 1-1.518-1.1 5.5 5.5 0 0 1-1.056-1.76q-.374-1.035-.374-2.354v-.352q0-1.299.374-2.332.375-1.034 1.012-1.76.639-.726 1.474-1.1a4.3 4.3 0 0 1 1.826-.396q1.167 0 1.87.396.727.396 1.144 1.232h.396v-1.32h2.772V20.7q0 .66.594.66h.418V24h-1.892q-.747 0-1.232-.44-.462-.44-.462-1.144zm-2.464-.748q1.21 0 1.936-.792.726-.814.726-2.2v-.264q0-1.386-.726-2.178-.726-.814-1.936-.814-1.21-.001-1.936.814-.726.792-.726 2.178v.264q0 1.386.726 2.2.727.792 1.936.792m19.521-1.672q-.374 1.936-1.782 3.124-1.386 1.188-3.718 1.188a6.7 6.7 0 0 1-2.266-.374 5.3 5.3 0 0 1-1.804-1.078 4.9 4.9 0 0 1-1.21-1.738q-.44-1.035-.44-2.354V18.5q0-1.32.44-2.376a5.35 5.35 0 0 1 1.21-1.804 5.5 5.5 0 0 1 1.826-1.144 6.3 6.3 0 0 1 2.244-.396q2.288 0 3.696 1.188 1.43 1.188 1.804 3.124l-2.728.704a2.86 2.86 0 0 0-.836-1.672q-.703-.705-1.98-.704-.594 0-1.122.22a2.7 2.7 0 0 0-.924.638 3 3 0 0 0-.638.99q-.22.571-.22 1.298v.132q0 .726.22 1.298.242.549.638.924.396.374.924.572.528.176 1.122.176 1.276 0 1.936-.638.682-.639.88-1.716zm5.265-.55q.022.483.22.902.22.395.572.704.374.285.836.462.484.154 1.012.154 1.034 0 1.584-.352.55-.375.792-.88l2.376 1.32a5 5 0 0 1-.55.88 3.9 3.9 0 0 1-.924.814q-.55.373-1.364.616-.792.241-1.87.242-1.231 0-2.244-.396a5.1 5.1 0 0 1-1.76-1.144 5.4 5.4 0 0 1-1.144-1.826q-.396-1.08-.396-2.442v-.132q0-1.255.418-2.288a5.3 5.3 0 0 1 1.188-1.76 5.3 5.3 0 0 1 1.738-1.122 5.6 5.6 0 0 1 2.156-.418q1.408 0 2.42.506 1.012.483 1.672 1.254.66.747.968 1.672.308.901.308 1.76v1.474zm2.618-4.158q-1.056 0-1.716.55-.66.527-.858 1.232h5.148q-.132-.771-.836-1.276-.682-.506-1.738-.506"
+        />
+      </symbol>
+      <symbol id="User" viewBox="0 0 20 20">
+        <path
+          fill="#fff"
+          fill-rule="evenodd"
+          d="M10 3.125a4.375 4.375 0 1 0 0 8.75 4.375 4.375 0 0 0 0-8.75M4.375 7.5a5.625 5.625 0 1 1 11.25 0 5.625 5.625 0 0 1-11.25 0"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#fff"
+          fill-rule="evenodd"
+          d="M10 13.124a8.12 8.12 0 0 0-7.037 4.063.625.625 0 0 1-1.082-.625 9.374 9.374 0 0 1 16.238 0 .625.625 0 1 1-1.082.625A8.12 8.12 0 0 0 10 13.124"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="Globe" viewBox="0 0 32 32">
+        <path
+          fill="#858584"
+          fill-rule="evenodd"
+          d="M16 5C9.925 5 5 9.925 5 16s4.925 11 11 11 11-4.925 11-11S22.075 5 16 5M3 16C3 8.82 8.82 3 16 3s13 5.82 13 13-5.82 13-13 13S3 23.18 3 16"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#858584"
+          fill-rule="evenodd"
+          d="M3.688 12a1 1 0 0 1 1-1h22.625a1 1 0 1 1 0 2H4.688a1 1 0 0 1-1-1m0 8a1 1 0 0 1 1-1h22.625a1 1 0 1 1 0 2H4.688a1 1 0 0 1-1-1"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#858584"
+          fill-rule="evenodd"
+          d="M13.384 8.138C12.544 10.1 12 12.878 12 16s.544 5.9 1.384 7.862c.42.982.896 1.713 1.373 2.184.472.467.891.63 1.243.63s.771-.163 1.244-.63c.476-.47.952-1.202 1.372-2.184C19.456 21.901 20 19.122 20 16s-.544-5.9-1.384-7.862c-.42-.982-.896-1.713-1.372-2.184-.473-.466-.892-.629-1.244-.629s-.771.162-1.243.63c-.477.47-.953 1.201-1.373 2.183m-.033-3.607c.724-.715 1.62-1.206 2.649-1.206s1.925.491 2.649 1.206c.72.71 1.322 1.69 1.806 2.82.97 2.265 1.545 5.323 1.545 8.65 0 3.325-.575 6.384-1.545 8.648-.484 1.13-1.086 2.11-1.806 2.82-.724.715-1.62 1.206-2.649 1.206s-1.925-.49-2.649-1.206c-.72-.71-1.322-1.69-1.806-2.82C10.575 22.385 10 19.326 10 16s.575-6.384 1.545-8.649c.484-1.13 1.087-2.11 1.806-2.82"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="Discord" viewBox="0 0 32 32">
+        <path
+          fill="#858584"
+          d="M12 19.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"
+        />
+        <path
+          fill="#858584"
+          fill-rule="evenodd"
+          d="M15.992 10a20.9 20.9 0 0 0-6.394.954A1 1 0 0 1 9 9.045 22.9 22.9 0 0 1 16 8a22.9 22.9 0 0 1 6.998 1.045 1 1 0 1 1-.598 1.909A20.9 20.9 0 0 0 16.007 10zM8.345 21.701a1 1 0 0 1 1.253-.655c2.069.648 4.226.97 6.394.954h.014a20.9 20.9 0 0 0 6.394-.954 1 1 0 0 1 .598 1.909A22.9 22.9 0 0 1 16 24a22.9 22.9 0 0 1-7-1.046 1 1 0 0 1-.655-1.253"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#858584"
+          fill-rule="evenodd"
+          d="M20.22 4.811c.43-.242.935-.318 1.417-.213 1.318.286 2.608.686 3.855 1.197a1.96 1.96 0 0 1 1.18 1.286l4.235 14.144a2.01 2.01 0 0 1-.596 2.088l-.005.004c-2.068 1.8-4.869 3.16-8.05 3.94a1.976 1.976 0 0 1-2.266-1.053l-1.508-2.991a1 1 0 1 1 1.785-.9l1.513 3 .001.002c2.938-.72 5.432-1.958 7.212-3.507l.657.755-.662-.75.004-.006V21.8L24.756 7.655l-.011-.005a21 21 0 0 0-3.532-1.097h-.002q-.005-.002-.01 0l-.005.006-.985 2.98a1 1 0 0 1-1.898-.628l.99-2.996c.16-.468.486-.86.916-1.104m-9.421 1.742h-.011a21 21 0 0 0-3.543 1.102L3.008 21.8v.007q0 .003.004.005c1.78 1.547 4.272 2.783 7.207 3.503l.001-.003 1.512-3a1 1 0 0 1 1.786.9l-1.508 2.992a1.975 1.975 0 0 1-2.265 1.054c-3.182-.78-5.983-2.142-8.051-3.94l-.005-.005a2.01 2.01 0 0 1-.597-2.087L5.328 7.08a1.96 1.96 0 0 1 1.18-1.286 23 23 0 0 1 3.856-1.197 2.013 2.013 0 0 1 2.333 1.317l.003.009.987 2.987a1 1 0 1 1-1.898.628l-.985-2.98z"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#858584"
+          d="M12 19.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"
+        />
+        <path
+          fill="#858584"
+          fill-rule="evenodd"
+          d="M15.992 10a20.9 20.9 0 0 0-6.394.954A1 1 0 0 1 9 9.045 22.9 22.9 0 0 1 16 8a22.9 22.9 0 0 1 6.998 1.045 1 1 0 1 1-.598 1.909A20.9 20.9 0 0 0 16.007 10zM8.345 21.701a1 1 0 0 1 1.253-.655c2.069.648 4.226.97 6.394.954h.014a20.9 20.9 0 0 0 6.394-.954 1 1 0 0 1 .598 1.909A22.9 22.9 0 0 1 16 24a22.9 22.9 0 0 1-7-1.046 1 1 0 0 1-.655-1.253"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#858584"
+          fill-rule="evenodd"
+          d="M20.22 4.811c.43-.242.935-.318 1.417-.213 1.318.286 2.608.686 3.855 1.197a1.96 1.96 0 0 1 1.18 1.286l4.235 14.144a2.01 2.01 0 0 1-.596 2.088l-.005.004c-2.068 1.8-4.869 3.16-8.05 3.94a1.976 1.976 0 0 1-2.266-1.053l-1.508-2.991a1 1 0 1 1 1.785-.9l1.513 3 .001.002c2.938-.72 5.432-1.958 7.212-3.507l.657.755-.662-.75.004-.006V21.8L24.756 7.655l-.011-.005a21 21 0 0 0-3.532-1.097h-.002q-.005-.002-.01 0l-.005.006-.985 2.98a1 1 0 0 1-1.898-.628l.99-2.996c.16-.468.486-.86.916-1.104m-9.421 1.742h-.011a21 21 0 0 0-3.543 1.102L3.008 21.8v.007q0 .003.004.005c1.78 1.547 4.272 2.783 7.207 3.503l.001-.003 1.512-3a1 1 0 0 1 1.786.9l-1.508 2.992a1.975 1.975 0 0 1-2.265 1.054c-3.182-.78-5.983-2.142-8.051-3.94l-.005-.005a2.01 2.01 0 0 1-.597-2.087L5.328 7.08a1.96 1.96 0 0 1 1.18-1.286 23 23 0 0 1 3.856-1.197 2.013 2.013 0 0 1 2.333 1.317l.003.009.987 2.987a1 1 0 1 1-1.898.628l-.985-2.98z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="Youtube" viewBox="0 0 32 32">
+        <path
+          fill="#858584"
+          fill-rule="evenodd"
+          d="M13.528 11.118a1 1 0 0 1 1.027.05l6 4a1 1 0 0 1 0 1.664l-6 4A1 1 0 0 1 13 20v-8a1 1 0 0 1 .528-.882M15 13.868v4.263L18.197 16z"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#858584"
+          fill-rule="evenodd"
+          d="M15.999 5.05h-.08l-.236.001a54 54 0 0 0-3.76.183c-2.276.193-5.174.592-7.405 1.444l-.015.006a3.01 3.01 0 0 0-1.796 2.04v.003C2.394 9.946 2 12.206 2 16s.395 6.054.706 7.273l.001.003a3.01 3.01 0 0 0 1.796 2.04l.015.006c2.231.852 5.13 1.25 7.406 1.443a54 54 0 0 0 3.995.185h.162l.236-.002a54 54 0 0 0 3.76-.183c2.276-.192 5.174-.591 7.405-1.444l.015-.005a3.01 3.01 0 0 0 1.796-2.04v-.003c.312-1.22.707-3.479.707-7.273s-.395-6.054-.706-7.273l-.001-.004a3.01 3.01 0 0 0-1.796-2.039l-.015-.006c-2.231-.852-5.13-1.251-7.406-1.443a54 54 0 0 0-3.995-.185h-.083m-.004 19.9h.082l.219-.002a52 52 0 0 0 3.612-.176c2.236-.189 4.896-.57 6.852-1.316a1.01 1.01 0 0 0 .597-.68C27.62 21.742 28 19.652 28 16s-.38-5.743-.643-6.775a1.01 1.01 0 0 0-.597-.682c-1.956-.745-4.616-1.127-6.852-1.315a52 52 0 0 0-3.831-.178h-.154l-.219.001a52 52 0 0 0-3.612.176c-2.236.19-4.896.57-6.852 1.316a1.01 1.01 0 0 0-.597.682C4.38 10.257 4 12.347 4 16s.38 5.743.643 6.775a1.01 1.01 0 0 0 .597.681c1.956.746 4.616 1.127 6.852 1.316a52 52 0 0 0 3.831.178z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="Twitter" viewBox="0 0 32 32">
+        <path
+          stroke="#858584"
+          fill="transparent"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M16 11c0-2.75 2.313-5.037 5.063-5a5 5 0 0 1 4.525 3h4.413l-4.038 4.038A15.99 15.99 0 0 1 10.001 28c-4 0-5-1.5-5-1.5S9 25 11 22c0 0-8-4-6-15 0 0 5 5 11 6z"
+        />
+      </symbol>
+      <symbol id="Instagram" viewBox="0 0 32 32">
+        <path
+          fill="#858584"
+          fill-rule="evenodd"
+          d="M16 12a4 4 0 1 0 0 8 4 4 0 0 0 0-8m-6 4a6 6 0 1 1 12 0 6 6 0 0 1-12 0"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#858584"
+          fill-rule="evenodd"
+          d="M10.5 5.5a5 5 0 0 0-5 5v11a5 5 0 0 0 5 5h11a5 5 0 0 0 5-5v-11a5 5 0 0 0-5-5zm-7 5a7 7 0 0 1 7-7h11a7 7 0 0 1 7 7v11a7 7 0 0 1-7 7h-11a7 7 0 0 1-7-7z"
+          clip-rule="evenodd"
+        />
+        <path fill="#858584" d="M22.5 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+      </symbol>
+      <symbol id="Plus" viewBox="0 0 20 20">
+        <path
+          fill="#a259ff"
+          fill-rule="evenodd"
+          d="M2.5 10c0-.345.28-.625.625-.625h13.75a.625.625 0 1 1 0 1.25H3.125A.625.625 0 0 1 2.5 10"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#a259ff"
+          fill-rule="evenodd"
+          d="M10 2.5c.345 0 .625.28.625.625v13.75a.625.625 0 1 1-1.25 0V3.125c0-.345.28-.625.625-.625"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="Copy" viewBox="0 0 20 20">
+        <path
+          fill="#fff"
+          fill-rule="evenodd"
+          d="M6.25 3.125c0-.345.28-.625.625-.625h10c.345 0 .625.28.625.625v10c0 .345-.28.625-.625.625h-3.75a.625.625 0 1 1 0-1.25h3.125V3.75H7.5v3.125a.625.625 0 1 1-1.25 0z"
+          clip-rule="evenodd"
+        />
+        <path
+          fill="#fff"
+          fill-rule="evenodd"
+          d="M2.5 6.875c0-.345.28-.625.625-.625h10c.345 0 .625.28.625.625v10c0 .345-.28.625-.625.625h-10a.625.625 0 0 1-.625-.625zm1.25.625v8.75h8.75V7.5z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+    </svg>
+
     <header>
-      <div class="header_title">
-        <img src="./imgs/Storefront.png" alt="Logo" />
-        <p>NFT Marketplace</p>
-      </div>
-      <div class="header_btns">
-        <button class="btn">Marketplace</button>
-        <button class="btn">Rankings</button>
-        <button class="btn">Connect a wallet</button>
-        <button class="btn btn-active">
-          <img src="./imgs/User.png" alt="Sign Up" />
-          Sign Up
-        </button>
+      <svg class="logo">
+        <use xlink:href="#logo"></use>
+      </svg>
+      <div class="header_links">
+        <a href="#" class="link text_work_sans_600 fs_16">Marketplace</a>
+        <a href="#" class="link text_work_sans_600 fs_16">Rankings</a>
+        <a href="#" class="link text_work_sans_600 fs_16">Connect a wallet</a>
+        <a href="#" class="link link-active text_work_sans_600 fs_16"
+          ><svg><use xlink:href="#User"></use></svg> Sign Up
+        </a>
         <button class="burger">
           <span></span>
           <span></span>
@@ -34,5 +200,337 @@
         <img src="./imgs/Avatar.png" alt="Avatar image" />
       </div>
     </div>
+
+    <div class="box_info">
+      <div class="title_and_btns">
+        <h2 class="text_work_sans_600">Animakid</h2>
+        <div class="info_btns">
+          <button class="btn text_work_sans_600 fs_16">
+            <svg><use xlink:href="#Copy"></use></svg>
+            0xc0E3...B79C
+          </button>
+          <button class="btn text_work_sans_600 fs_16">
+            <svg class="fff"><use xlink:href="#Plus"></use></svg>
+            Follow
+          </button>
+        </div>
+      </div>
+      <div class="info_numbers">
+        <div>
+          <h4 class="text_space_mono_700">250k+</h4>
+          <p class="text_work_sans_400 fs_22">Volume</p>
+        </div>
+        <div>
+          <h4 class="text_space_mono_700">50+</h4>
+          <p class="text_work_sans_400 fs_22">NFTs Sold</p>
+        </div>
+        <div>
+          <h4 class="text_space_mono_700">3000+</h4>
+          <p class="text_work_sans_400 fs_22">Followers</p>
+        </div>
+      </div>
+      <div>
+        <p class="title text_space_mono_700 fs_22">Bio</p>
+        <p class="text_work_sans_400 fs_22">
+          The internet's friendliest designer kid.
+        </p>
+      </div>
+      <div>
+        <p class="title text_space_mono_700 fs_22">Links</p>
+        <div class="links">
+          <a href="https://www.animaapp.com">
+            <svg><use xlink:href="#Globe"></use></svg>
+          </a>
+          <a href="https://www.animaapp.com">
+            <svg><use xlink:href="#Discord"></use></svg>
+          </a>
+          <a href="https://www.animaapp.com">
+            <svg><use xlink:href="#Youtube"></use></svg>
+          </a>
+          <a href="https://www.animaapp.com">
+            <svg><use xlink:href="#Twitter"></use></svg>
+          </a>
+          <a href="https://www.animaapp.com">
+            <svg><use xlink:href="#Instagram"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+
+    <div class="tabs">
+      <div class="active">
+        <p class="title text_work_sans_600 fs_22">Created</p>
+        <p class="num">302</p>
+      </div>
+      <div>
+        <p class="title text_work_sans_600 fs_22">Owned</p>
+        <p class="num">67</p>
+      </div>
+      <div>
+        <p class="title text_work_sans_600 fs_22">Collection</p>
+        <p class="num">4</p>
+      </div>
+    </div>
+
+    <div class="box_card">
+      <div class="card">
+        <img class="img_card" src="./imgs/ImageGalaxy.png" alt="Galaxy image" />
+        <div class="content_card">
+          <div>
+            <h5 class="text_work_sans_600 fs_22">Distant Galaxy</h5>
+            <div class="avatar_card">
+              <img src="./imgs/Avatar.png" alt="Animakid image" />
+              <p class="text_space_mono_400 fs_16">Animakid</p>
+            </div>
+          </div>
+
+          <div class="additional_info">
+            <div>
+              <p class="title_2 text_space_mono_400">Price</p>
+              <p class="text_space_mono_400 fs_16">1.63 ETH</p>
+            </div>
+            <div>
+              <p class="title_2 text_space_mono_400">Highest Bid</p>
+              <p class="text_space_mono_400 fs_16">0.33 wETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="img_card" src="./imgs/ImageGalaxy.png" alt="Galaxy image" />
+        <div class="content_card">
+          <div>
+            <h5 class="text_work_sans_600 fs_22">Distant Galaxy</h5>
+            <div class="avatar_card">
+              <img src="./imgs/Avatar.png" alt="Animakid image" />
+              <p class="text_space_mono_400 fs_16">Animakid</p>
+            </div>
+          </div>
+
+          <div class="additional_info">
+            <div>
+              <p class="title_2 text_space_mono_400">Price</p>
+              <p class="text_space_mono_400 fs_16">1.63 ETH</p>
+            </div>
+            <div>
+              <p class="title_2 text_space_mono_400">Highest Bid</p>
+              <p class="text_space_mono_400 fs_16">0.33 wETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="img_card" src="./imgs/ImageGalaxy.png" alt="Galaxy image" />
+        <div class="content_card">
+          <div>
+            <h5 class="text_work_sans_600 fs_22">Distant Galaxy</h5>
+            <div class="avatar_card">
+              <img src="./imgs/Avatar.png" alt="Animakid image" />
+              <p class="text_space_mono_400 fs_16">Animakid</p>
+            </div>
+          </div>
+
+          <div class="additional_info">
+            <div>
+              <p class="title_2 text_space_mono_400">Price</p>
+              <p class="text_space_mono_400 fs_16">1.63 ETH</p>
+            </div>
+            <div>
+              <p class="title_2 text_space_mono_400">Highest Bid</p>
+              <p class="text_space_mono_400 fs_16">0.33 wETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="img_card" src="./imgs/ImageGalaxy.png" alt="Galaxy image" />
+        <div class="content_card">
+          <div>
+            <h5 class="text_work_sans_600 fs_22">Distant Galaxy</h5>
+            <div class="avatar_card">
+              <img src="./imgs/Avatar.png" alt="Animakid image" />
+              <p class="text_space_mono_400 fs_16">Animakid</p>
+            </div>
+          </div>
+
+          <div class="additional_info">
+            <div>
+              <p class="title_2 text_space_mono_400">Price</p>
+              <p class="text_space_mono_400 fs_16">1.63 ETH</p>
+            </div>
+            <div>
+              <p class="title_2 text_space_mono_400">Highest Bid</p>
+              <p class="text_space_mono_400 fs_16">0.33 wETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="img_card" src="./imgs/ImageGalaxy.png" alt="Galaxy image" />
+        <div class="content_card">
+          <div>
+            <h5 class="text_work_sans_600 fs_22">Distant Galaxy</h5>
+            <div class="avatar_card">
+              <img src="./imgs/Avatar.png" alt="Animakid image" />
+              <p class="text_space_mono_400 fs_16">Animakid</p>
+            </div>
+          </div>
+
+          <div class="additional_info">
+            <div>
+              <p class="title_2 text_space_mono_400">Price</p>
+              <p class="text_space_mono_400 fs_16">1.63 ETH</p>
+            </div>
+            <div>
+              <p class="title_2 text_space_mono_400">Highest Bid</p>
+              <p class="text_space_mono_400 fs_16">0.33 wETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="img_card" src="./imgs/ImageGalaxy.png" alt="Galaxy image" />
+        <div class="content_card">
+          <div>
+            <h5 class="text_work_sans_600 fs_22">Distant Galaxy</h5>
+            <div class="avatar_card">
+              <img src="./imgs/Avatar.png" alt="Animakid image" />
+              <p class="text_space_mono_400 fs_16">Animakid</p>
+            </div>
+          </div>
+
+          <div class="additional_info">
+            <div>
+              <p class="title_2 text_space_mono_400">Price</p>
+              <p class="text_space_mono_400 fs_16">1.63 ETH</p>
+            </div>
+            <div>
+              <p class="title_2 text_space_mono_400">Highest Bid</p>
+              <p class="text_space_mono_400 fs_16">0.33 wETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="img_card" src="./imgs/ImageGalaxy.png" alt="Galaxy image" />
+        <div class="content_card">
+          <div>
+            <h5 class="text_work_sans_600 fs_22">Distant Galaxy</h5>
+            <div class="avatar_card">
+              <img src="./imgs/Avatar.png" alt="Animakid image" />
+              <p class="text_space_mono_400 fs_16">Animakid</p>
+            </div>
+          </div>
+
+          <div class="additional_info">
+            <div>
+              <p class="title_2 text_space_mono_400">Price</p>
+              <p class="text_space_mono_400 fs_16">1.63 ETH</p>
+            </div>
+            <div>
+              <p class="title_2 text_space_mono_400">Highest Bid</p>
+              <p class="text_space_mono_400 fs_16">0.33 wETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="img_card" src="./imgs/ImageGalaxy.png" alt="Galaxy image" />
+        <div class="content_card">
+          <div>
+            <h5 class="text_work_sans_600 fs_22">Distant Galaxy</h5>
+            <div class="avatar_card">
+              <img src="./imgs/Avatar.png" alt="Animakid image" />
+              <p class="text_space_mono_400 fs_16">Animakid</p>
+            </div>
+          </div>
+
+          <div class="additional_info">
+            <div>
+              <p class="title_2 text_space_mono_400">Price</p>
+              <p class="text_space_mono_400 fs_16">1.63 ETH</p>
+            </div>
+            <div>
+              <p class="title_2 text_space_mono_400">Highest Bid</p>
+              <p class="text_space_mono_400 fs_16">0.33 wETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="img_card" src="./imgs/ImageGalaxy.png" alt="Galaxy image" />
+        <div class="content_card">
+          <div>
+            <h5 class="text_work_sans_600 fs_22">Distant Galaxy</h5>
+            <div class="avatar_card">
+              <img src="./imgs/Avatar.png" alt="Animakid image" />
+              <p class="text_space_mono_400 fs_16">Animakid</p>
+            </div>
+          </div>
+
+          <div class="additional_info">
+            <div>
+              <p class="title_2 text_space_mono_400">Price</p>
+              <p class="text_space_mono_400 fs_16">1.63 ETH</p>
+            </div>
+            <div>
+              <p class="title_2 text_space_mono_400">Highest Bid</p>
+              <p class="text_space_mono_400 fs_16">0.33 wETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer_info">
+        <div class="marketplace_info">
+          <svg><use xlink:href="#logo"></use></svg>
+          <div class="additional_info">
+            <p class="text">NFT marketplace UI created with Anima for Figma.</p>
+            <p class="text">Join our community</p>
+            <div class="links">
+              <svg><use xlink:href="#Discord"></use></svg>
+              <svg><use xlink:href="#Youtube"></use></svg>
+              <svg><use xlink:href="#Twitter"></use></svg>
+              <svg><use xlink:href="#Instagram"></use></svg>
+            </div>
+          </div>
+        </div>
+        <div class="explore">
+          <h5 class="text_space_mono_700 fs_22">Explore</h5>
+          <div class="pages text_work_sans_400 fs_16">
+            <a class="text text_work_sans_400 fs_16">Marketplace</a>
+            <a class="text text_work_sans_400 fs_16">Rankings</a>
+            <a class="text text_work_sans_400 fs_16">Connect a wallet</a>
+          </div>
+        </div>
+        <div class="subscribe">
+          <h5 class="text_space_mono_700 fs_22">Join our weekly digest</h5>
+          <div class="subscribe_info">
+            <p class="text text_work_sans_400 fs_16">
+              Get exclusive promotions & updates straight to your inbox.
+            </p>
+            <form>
+              <input
+                class="text_work_sans_400 fs_16"
+                type="text"
+                placeholder="Enter your email here"
+              />
+              <button class="text_work_sans_600 fs_16" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div>
+        <hr />
+        <p class="text text_work_sans_400 fs_16">
+          Ⓒ NFT Market. Use this template freely.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
